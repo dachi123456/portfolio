@@ -1,0 +1,105 @@
+#main-container{
+    display: flex;
+    height: 100vh;
+    background: #222831;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+   
+}
+#main-container.visible{
+    opacity: 1;
+}
+.img-div{
+    background-image: url(../assets/rectangleBg.png);
+    background-position: center;
+    width: 25rem;
+    height: 20rem;
+    margin-top: -6rem;
+    
+}
+
+.text-div{
+    width: 20rem;
+    margin-left: 6rem;
+    position: relative;
+}
+.img-div img{
+    margin-top: 8rem;
+    margin-left: -1rem;
+    background: transparent;
+}
+
+.text-div h1{
+    color: #EEE;
+    font-size: 2.6rem;
+    
+}
+.text-div span{
+    color: #00ADB5;
+}
+.btns-div{
+    display: flex;
+    flex-direction: row;
+    width: 16rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+.btns-div button{
+    height: 2.5rem;
+    font-weight: 700;
+    color: #EEE;
+    border: none;
+    outline: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+.btns-div button:hover{
+    transform: translateY(-0.2rem);
+}
+.hire-btn{
+    border-radius: 24px;
+    background: #00ADB5;
+    width: 7rem;
+}
+.cv-btn{
+    border-radius: 24px;
+    background: rgba(57, 62, 70, 0.75);
+    backdrop-filter: blur(2px);
+    width: 8rem;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .text-div{
+        margin-left: 1rem;
+    }
+    .img-div{
+        width: 18rem;
+        margin-top: 1.5rem;
+    }
+    .img-div img{
+        width: 80%;
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #main-container{
+        height: 100vh;
+    }
+    .img-div{
+        display: none;
+    }
+    .text-div{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+}

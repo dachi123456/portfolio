@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Manrope:wght@200&family=Montserrat:wght@500&family=Poppins:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #222831;
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #f0f0f0;
+}
+* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #888888;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}

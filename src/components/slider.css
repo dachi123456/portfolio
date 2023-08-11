@@ -1,0 +1,59 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  background: transparent;
+
+  }
+  
+  .carousel-container {
+    display: grid;
+    grid-template-columns: repeat(6, 100%); 
+    direction: ltr;
+    transition: transform 0.3s ease-in-out;
+    background: transparent;
+    
+  }
+ 
+   .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 5rem;
+    background: transparent;
+    filter: brightness(75%);
+  }
+  .left-arrow{
+    position: absolute;
+    transform: translateY(-50%) rotate(180deg); 
+    cursor: pointer;
+  }
+  
+  .left-arrow {
+    left: 10px;
+    transform: translateX(180deg);
+    position: absolute;
+    z-index: 100;
+    background-color: transparent;
+  }
+  
+  .right-arrow {
+    right: 10px;
+    transform: translateX(180deg);
+    position: absolute;
+    z-index: 100;
+    background-color: transparent;
+  }
+
+
+  @media screen and (max-width: 580px) {
+    .left-arrow,.right-arrow{
+      width: 3rem;
+    }
+}
+
